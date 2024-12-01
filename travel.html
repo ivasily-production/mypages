@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Главная/IVasily</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/vkladki.css">
+<link rel="stylesheet" href="css/button.css">
+<link rel="stylesheet" href="css/table.css">
+<link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Top">^</button>
+   <!--Scroll JS-->
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+ 
+    </div>
+
+   <div class="slideshow-container">
+      <!-- Fon video  -->
+    <video autoplay muted loop id="myVideo" >
+      <source src="img/fon.mp4" type="video/mp4" >
+      Ваш браузер не поддерживает этот сайт, многие функции могут не работать.
+    </video>
+    
+    <div class="content">
+      <h1>Путешествия</h1>
+      <p>Большое количество видео с путешествиями. Отели, рестораны, пляжи и не только.</p>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+   <!-- Navbar -->
+    <div class="navbar">
+      <a href="index.html"><img src="img/Logo.png" height="52"></a>
+      <a href="index.html#about">Новости</a>
+      <a href="menu.html">Гайды</a>
+      <a href="policy.html">Политика</a>
+</div>
+<br>
+   <center><font color="red"><h1>IVasily 404</h1></font></center>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<center><h2>eRRor</h2></center>
+<h4 id="#about"> Если вы видите это сообщение, возникла <b><em>ошибка</em></b> <br> У вас <b>плохое</b> соеденение, или разработчик плохо сделал своё дело🤷‍♂️. <a href="#" onclick="location.reload(); return false;">
+	Обновить страницу
+</a>
+</h4>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+  <p id="demo"></p>
+  
+
+
+</body>
+</html> 
