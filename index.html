@@ -8,10 +8,12 @@
 <link rel="stylesheet" href="css/vkladki.css">
 <link rel="stylesheet" href="css/button.css">
 <link rel="stylesheet" href="css/table.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
 </head>
 <body>
   <button onclick="topFunction()" id="myBtn" title="Top">^</button>
-  <!--Scroll JS-->
+        <!--Scroll JS-->
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
@@ -30,7 +32,9 @@
         document.documentElement.scrollTop = 0;
     }
     </script>
-    <!-- Navbar -->
+  
+                <!-- Navbar -->
+  
     <div class="navbar">
       <a href="index.html"><img src="img/channels4_profile.jpg" height="52"></a>
       <!-- Navbar-search -->
@@ -40,7 +44,9 @@
       <a href="menu.html">Ветки</a>
       <a href="policy.html">Политика</a>
     </div>
+  
   <!--Search-->
+  
         <script async src="https://cse.google.com/cse.js?cx=45a2a58837fee4606">
 </script>
 <div class="gcse-search"></div>
@@ -70,15 +76,48 @@
   <img src="img/travel/yaroslavl_1.JPG" style="width:300" height="700">
   <div class="text">Небольшой старинный городок в Золотом кольце</div>
 </div>
-
 </div>
 <br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
+     <!--Pop-->
+      <section class="section">
+    <h1 class="section__title">Модальное окно</h1>
+    <button class="section__button section__button1">Открыть</button>
+  </section>
+
+  <section class="section">
+    <h1 class="section__title">Модальное окно</h1>
+    <button class="section__button section__button2">Открыть 2</button>
+  </section>
+
+  <div class="modal modal1">
+    <div class="modal__main">
+      <h2 class="modal__title">Модальное окно</h2>
+      
+      <div class="modal__container">
+        <p>Сделаем правильно</p>
+        <p>HTML CSS JavaScript</p>
+      </div>
+
+      <button class="modal__btn">Смотреть видео</button>
+      <button class="modal__close">&#10006;</button>
+    </div>
+  </div>
+
+  <div class="modal modal2">
+    <div class="modal__main">
+      <h2 class="modal__title">Модальное окно 2</h2>
+      
+      <div class="modal__container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum doloremque unde perferendis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea accusantium aperiam, quis commodi incidunt amet quidem vero ut possimus sed veniam aliquam eum, in porro consequuntur impedit deserunt sequi velit quisquam quod suscipit. Consequuntur, facere earum, iusto sit odit aperiam ipsam illo architecto autem esse eos eius maiores quam magnam?</p>
+      </div>
+
+      <button class="modal__close">&#10006;</button>
+    </div>
+  </div>
+
+     <!--Scripts-->
 
 <script>
 var slideIndex = 0;
